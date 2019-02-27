@@ -1,17 +1,8 @@
 import { combineReducers } from 'redux';
-import xxxxReducer from './xxxx_reducer';
+import postReducer from './post_reducer';
+import userReducer from './user_reducer';
 
 export default combineReducers({
-    // xxxx: xxxxReducer,
+    posts: postReducer,
+    users: userReducer,
 })
-
-// xxxx reducer
-
-// export default (state = [], action) => {
-//     switch (action.type) {
-//         case 'FETCH_DATA':
-//             return action.payload;
-//         default:
-//             return state;
-//     }
-// };

@@ -1,11 +1,11 @@
 import React from 'react';
-import xxxx from './xxxx';
+import PostList from './post_list';
 
 class App extends React.Component {
     render () {
         return (
             <div className="app container">
-                <xxxx />
+                <PostList />
             </div>
         );
     }
