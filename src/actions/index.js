@@ -1,12 +1,9 @@
-import Typicode from '../apis/typicode';
-import _ from 'lodash';
+import { SIGN_IN, SIGN_OUT } from './types';
 
-export const fetchData = () => {
-    return async (dispatch /*, getState*/) => {
-        const response = await Typicode.get('/posts');
-        dispatch({
-            type: 'FETCH_DATA',
-            payload: response.data,
-        });
-    };
+export const signIn = (userId) => {
+    return { type: SIGN_IN, payload: userId }
+};
+
+export const signOut = () => {
+    return { type: SIGN_OUT }
 };
